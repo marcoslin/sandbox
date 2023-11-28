@@ -26,4 +26,11 @@ services:
       - 4002:4002
       - 9392:9392
       - 3999:3999
+    volumes:
+      - type: volume
+        source: data_vol
+        target: /opt/data
+
+volumes:
+    data_vol:
 
